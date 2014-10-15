@@ -25,11 +25,6 @@ import           Snap.Snaplet.Session.Backends.CookieSession
 import           Snap.Util.FileServe
 ------------------------------------------------------------------------------
 import           Application
-
-
-noSplices :: Splices s
-noSplices = mempty
-
 ------------------------------------------------------------------------------
 -- | Render login form
 handleLogin :: Maybe T.Text -> Handler App (AuthManager App) ()
