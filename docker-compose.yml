@@ -1,0 +1,4 @@
+auth:
+  extends:
+    file: ./auth-server/docker-compose.yml
+    service: auth

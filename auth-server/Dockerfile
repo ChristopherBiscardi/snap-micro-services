@@ -18,8 +18,7 @@ RUN git clone https://github.com/snapframework/snap-core.git /opt/deps/snap-core
 RUN git clone https://github.com/snapframework/snap-server.git /opt/deps/snap-server
 RUN git clone https://github.com/snapframework/snap-loader-static.git /opt/deps/snap-loader-static
 RUN git clone https://github.com/snapframework/heist.git /opt/deps/heist
-#RUN git clone https://github.com/mightybyte/snaplet-postgresql-simple.git /opt/deps/snaplet-postgres-simple
-ADD ./deps/snaplet-postgresql-simple /opt/deps/snaplet-postgres-simple
+RUN git clone https://github.com/mightybyte/snaplet-postgresql-simple.git /opt/deps/snaplet-postgres-simple
 RUN cd /opt/deps/snaplet-postgres-simple && git checkout 1.0
 
 # Create Sandbox and Add Source Deps
